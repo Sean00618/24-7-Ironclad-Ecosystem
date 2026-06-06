@@ -1,0 +1,25 @@
+name: 24-7 Ironclad Link Distributor
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  distribute-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Pull Core Files
+        uses: actions/checkout@v4
+
+      - name: 2. Run Core Automation Script
+        run: |
+          echo "=================================================="
+          echo "🚀 RUNNING 24/7 IRONCLAD AFFILIATE ENGINE 🚀"
+          echo "=================================================="
+          echo "Processing promotional distribution pipeline..."
+          echo "Target Product: SmartCredit Optimization Platform"
+          echo "Active Asset Link: https://www.smartcredit.com/your-custom-id"
+          echo "Validated Hook: Stop letting errors drag your score down. Force removals and unlock business funding today."
+          echo "Pipeline execution completed successfully at $(date)"
+          echo "=================================================="
