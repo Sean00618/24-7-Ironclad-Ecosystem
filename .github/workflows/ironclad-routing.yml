@@ -1,0 +1,18 @@
+name: Ironclad Link Distributor
+on:
+  workflow_dispatch:
+
+jobs:
+  send-updates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Signal to Telegram
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            🚀 Ironclad Distribution Engine is online!
+            
+            System Architecture is fully integrated and ready to route assets.
+            
